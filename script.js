@@ -1,10 +1,13 @@
-for(var i=1; i<=100; i++){
-    var select = document.getElementById("years");
-    var option = document.createElement("OPTION");
-	select.options.add(option);
-	option.text = i;
-	option.value = i;
+function populateNumbers(){
+    for(var i=1; i<=100; i++){
+        var select = document.getElementById("years");
+        var option = document.createElement("OPTION");
+        select.options.add(option);
+        option.text = i;
+        option.value = i;
+    }
 }
+
 
 
 function compute()
