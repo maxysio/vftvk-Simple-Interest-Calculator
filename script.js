@@ -1,11 +1,10 @@
-function populateNumberOptions(){
-    t = document.getElementById("years");
-    for(i=1;i<=100;i++){
-        addhtml += "<option value=\"" + i + "\">" + i + "</option><br>"
-    }
-    t.innerHTML = addhtml;
+for(var i=1; i<=100; i++){
+    var select = document.getElementById("years");
+    var option = document.createElement("OPTION");
+	select.options.add(option);
+	option.text = i;
+	option.value = i;
 }
-
 
 
 function compute()
