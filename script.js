@@ -1,3 +1,11 @@
+function onLoadActivities(){
+    // Populate numbers into the number dropdown
+    populateNumbers();
+
+    // Set the range text 
+    setRangeSlider();
+}
+
 function populateNumbers(){
     for(var i=1; i<=100; i++){
         var select = document.getElementById("years");
@@ -6,6 +14,16 @@ function populateNumbers(){
         option.text = i;
         option.value = i;
     }
+}
+
+function setRangeSlider(){
+    var slider = document.getElementById("rate");
+    var output = document.getElementById("rate_text");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
 }
 
 function compute()
