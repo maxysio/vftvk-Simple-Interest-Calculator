@@ -15,6 +15,10 @@ table{
   display: inline-table;
 }
 
+.percentage_text{
+  width: 50px
+}
+
 tr{
   line-height:20px
 }
