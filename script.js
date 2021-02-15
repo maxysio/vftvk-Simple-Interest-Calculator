@@ -31,7 +31,7 @@ function compute()
         return;
     }
 
-    si = p * (1 + ((r/100) * t));
+    si = p * ((r/100) * t);
     si = si.toFixed(2);
     
     res = "If you deposit <mark>" + p + "</mark>,<br>";
