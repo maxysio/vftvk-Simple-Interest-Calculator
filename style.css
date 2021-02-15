@@ -4,10 +4,23 @@ body {
 }
 h1{
   color:grey;
+  text-align:center;
+}
+
+.anchored{
+  text-align:center;
+}
+
+table{
+  display: inline-table;
+}
+
+tr{
+  line-height:20px
 }
 
 td{
-  text-align: center;
+  text-align:left;
 }
 
 /* Chrome, Safari, Edge, Opera */

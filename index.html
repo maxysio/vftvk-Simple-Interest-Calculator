@@ -1,69 +1,40 @@
 <html>
-    <head>
+<head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body onload="onLoadActivities()">
+</head>
+<body onload="onLoadActivities()">
+    <h1>Simple Interest Calculator</h1>
+
+    <div class="anchored">
         <table>
-            <tr><h1>8Simple Interest Calculator</h1></tr>
-            <tr><td>Hola</td></tr>
-            <tr><td>Amount</td><td></td><td><input type="number"  id="principal"></td></tr>
-        </table>
-        
-        <table>
-            <th><td></td></th>
-            <th><td></td></th>
             <tr>
-                <td></td>
-                <td>
-                    <table>
-                        <th><td></td></th>
-                        <th><td></td></th>
-                        <th><td></td></th>
-                        <th><td></td></th>
-                        <th><td></td></th>
-                        <tr><td></td></tr>
-                        
-                        <tr><td></td></tr>
-                        <tr>
-                            <td></td>
-                            <td>Interest Rate</td>
-                            <td></td>
-                            <td>
-                                <input type="range" id="rate" min="0" max="25" step="0.25" value="3.5" oninput="setSliderValueText()">
-                            </td>
-                            <td></td>
-                            <td>
-                                <span id="rate_text"></span>
-                            </td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td></td>
-                            <td>No. of Years</td>
-                            <td></td>
-                            <td>
-                                <select id="years"></select>
-                            </td>
-                        </tr>
-                        <tr><td></td></tr>
-                        <tr><td></td></tr>
-                        <tr>
-                            <td></td>
-                            <td><button onclick="compute()">Compute Interest</button><br><br></td>
-                        </tr>
-                        
-                    </table>
-                </td>
+                <td>Amount</td>
+                <td><input type="number" id="principal"></td>
+            </tr>
+            <tr>
+                <td>Interest Rate</td>
+                <td><input type="range" id="rate" min="0" max="25" step="0.25" value="3.5"
+                        oninput="setSliderValueText()">
+                <span id="rate_text"></span></td>
+            </tr>
+            <tr>
+                <td>No. of Years</td>
+                <td><select id="years"></select></td>
+            </tr>
+            <tr>
+                <td><button onclick="compute()">Compute Interest</button><br></td>
             </tr>
             <tr>
                 <td></td>
-                <td>
+            </tr>
+            <tr>
+                <td colspan="2">
                     <span id="result"></span>
                 </td>
             </tr>
         </table>
-        <footer>© Everyone Can Get Rich</footer>
-    </body>
+    </div>
+    <footer>© Everyone Can Get Rich</footer>
+</body>
 </html>

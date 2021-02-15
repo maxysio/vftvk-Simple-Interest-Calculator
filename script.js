@@ -1,7 +1,5 @@
 function onLoadActivities(){
 
-    document.location.reload();
-    
     // Populate numbers into the number dropdown
     populateNumbers();
 
@@ -27,13 +25,13 @@ function compute()
     intFor  = Number(new Date().getFullYear()) + Number(t);
 
     si = p * (1 + ((r/100) * t));
+    si = si.toFixed(2);
     
-    res = "If you deposit " + p + "<br>";
+    res = "If you deposit " + p + ",<br>";
     res += "at an interest rate of " + r + "%.<br>"
     res += "You will rceive an amount of " + si + ",<br>"
-    res += "in the year " + intFor
+    res += "in the year " + intFor + "<br>"
     document.getElementById("result").innerHTML= res;
-
 }
 
 function setSliderValueText() {
