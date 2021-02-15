@@ -4,10 +4,20 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body onload="populateNumbers()">
-        <h1>5Simple Interest Calculator</h1>
-        Amount <input type="number"  id="principal">  <br/>
-        Interest Rate <input type="number"  id="rate">  <br/>
-        No. of Years <select id="years"></select>  <br/>
+        <table>
+            <tr>
+                <h1>6Simple Interest Calculator</h1>
+            </tr>
+            <tr>
+                <td>Amount</td><td><input type="number"  id="principal"></td><br/><br/>
+            </tr>
+            <tr>
+                <td>Interest Rate</td><td><input type="number"  id="rate"></td><br/><br/>
+            </tr>
+            <tr>
+                <td>No. of Years</td><td><select id="years"></select></td><br/><br/>
+            </tr>
+        </table>
         <span id="result"></span><br>
         <button onclick="compute()">Compute Interest</button>
     </body>
