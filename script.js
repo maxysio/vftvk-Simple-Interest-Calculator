@@ -1,12 +1,10 @@
 function onLoadActivities(){
 
-    window.reload(true);
-
     // Populate numbers into the number dropdown
     populateNumbers();
 
     // Set the range text 
-    setRangeSlider();
+    setSliderValueText();
 }
 
 function populateNumbers(){
@@ -17,16 +15,6 @@ function populateNumbers(){
         option.text = i;
         option.value = i;
     }
-}
-
-function setRangeSlider(){
-    var slider = document.getElementById("rate");
-    var output = document.getElementById("rate_text");
-    output.innerHTML = slider.value + "%";
-
-    slider.oninput = function() {
-        output.innerHTML = this.value;
-      }
 }
 
 function compute()
@@ -50,6 +38,6 @@ function setSliderValueText() {
     r = document.getElementById("rate");
     rt = document.getElementById("rate_text");
 
-    rt.innerHTML = r.value;
+    rt.innerHTML = r.value + "%";
 }
         
