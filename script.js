@@ -1,3 +1,10 @@
+// This should run as soon as page loads
+t = document.getElementById("years");
+for(i=1;i<=100;i++){
+    addhtml += "<option value=\"" + i + "\">" + i + "</option><br>"
+}
+t.innerHTML = addhtml;
+
 function compute()
 {
     p = Number(document.getElementById("principal").value);
@@ -6,8 +13,7 @@ function compute()
     intFor  = Number(new Date().getFullYear()) + Number(t);
 
     si = p * (1 + ((r/100) * t));
-    si = si.toFixed(2);
-
+    
     res = "If you deposit " + p + "<br>";
     res += "at an interest rate of " + r + "%.<br>"
     res += "You will rceive an amount of " + si + ",<br>"
