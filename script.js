@@ -3,7 +3,7 @@ function compute()
     p = document.getElementById("principal").value;
     r = document.getElementById("rate").value;
     t = document.getElementById("years").value;
-    intFor  = new Date().getFullYear() + t;
+    intFor  = Number(new Date().getFullYear()) + Number(t);
 
     si = p + (p * t * (r/100));
 
