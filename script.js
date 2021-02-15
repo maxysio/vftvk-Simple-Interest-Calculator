@@ -1,9 +1,10 @@
-// This should run as soon as page loads
-t = document.getElementById("years");
-for(i=1;i<=100;i++){
-    addhtml += "<option value=\"" + i + "\">" + i + "</option><br>"
+function populateNumberOptions(){
+    t = document.getElementById("years");
+    for(i=1;i<=100;i++){
+        addhtml += "<option value=\"" + i + "\">" + i + "</option><br>"
+    }
+    t.innerHTML = addhtml;
 }
-t.innerHTML = addhtml;
 
 function compute()
 {
