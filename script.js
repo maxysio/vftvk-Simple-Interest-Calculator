@@ -6,7 +6,7 @@ function compute()
 
     si = p + (p * t * (r/100));
 
-    document.getElementById("result").innerText= "Result is here" + si;
+    document.getElementById("result").innerText= "Result is here amigo : " + si;
 
 }
         
