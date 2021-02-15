@@ -1,4 +1,5 @@
 function populateNumberOptions(){
+    alert("here")
     t = document.getElementById("years");
     for(i=1;i<=100;i++){
         addhtml += "<option value=\"" + i + "\">" + i + "</option><br>"
