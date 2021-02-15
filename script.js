@@ -36,7 +36,7 @@ function compute()
     
     res = "If you deposit <mark>" + p + "</mark>,<br>";
     res += "at an interest rate of <mark>" + r + "%.</mark><br>"
-    res += "You will rceive an amount of <mark>" + si + "</mark>,<br>"
+    res += "You will receive an amount of <mark>" + si + "</mark>,<br>"
     res += "in the year <mark>" + intFor + "</mark><br>"
     document.getElementById("result").innerHTML= res;
 }
