@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body onload="populateNumbers()">
-        <h1>102 Simple Interest Calculator</h1>
+        <h1>103 Simple Interest Calculator</h1>
         <table>
             <th><td></td></th>
             <th><td></td></th>
@@ -19,8 +19,7 @@
             <tr>
                 <td>Interest Rate</td>
                 <td>
-                    <input type="range" id="rate" min="0" max="100" step="0.01" value="3.5">
-                    
+                    <input type="range" id="rate" min="0" max="100" step="0.01" value="3.5" oninput="setSliderValueText()">
                 </td>
                 <td>
                     <span id="rate_text">Here</span>

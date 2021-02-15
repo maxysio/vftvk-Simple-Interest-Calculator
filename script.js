@@ -1,7 +1,7 @@
 function onLoadActivities(){
 
     window.reload(true);
-    
+
     // Populate numbers into the number dropdown
     populateNumbers();
 
@@ -44,5 +44,12 @@ function compute()
     res += "in the year " + intFor
     document.getElementById("result").innerHTML= res;
 
+}
+
+function setSliderValueText() {
+    r = document.getElementById("rate");
+    rt = document.getElementById("rate_text");
+
+    rt.innerHTML = r.value;
 }
         
