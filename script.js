@@ -5,7 +5,7 @@ function compute()
     t = Number(document.getElementById("years").value);
     intFor  = Number(new Date().getFullYear()) + Number(t);
 
-    si = p + (p * t * (r/100));
+    si = p + (1 + (r/100) * t);
 
     res = "If you deposit " + p + "<br>";
     res += "at an interest rate of " + r + "%.<br>"
