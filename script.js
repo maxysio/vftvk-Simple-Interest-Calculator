@@ -1,4 +1,7 @@
 function onLoadActivities(){
+
+    window.reload(true);
+    
     // Populate numbers into the number dropdown
     populateNumbers();
 
