@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body onload="onLoadActivities()">
-        <h1>110 Simple Interest Calculator</h1>
+        <h1>111 Simple Interest Calculator</h1>
         <table>
             <th><td></td></th>
             <th><td></td></th>
@@ -22,6 +22,7 @@
             </tr>
             <tr><td></td></tr>
             <tr>
+                <td></td>
                 <td>Interest Rate</td>
                 <td></td>
                 <td>
@@ -35,14 +36,21 @@
             <tr><td></td></tr>
             <tr><td></td></tr>
             <tr>
+                <td></td>
                 <td>No. of Years</td>
                 <td></td>
                 <td>
                     <select id="years"></select>
                 </td>
             </tr>
+            <tr>
+                <td></td>
+                <td><button onclick="compute()">Compute Interest</button><br><br></td>
+            </tr>
+            <tr><td></td></tr>
+            <tr>
+                <td><span id="result"></span><br></td>
+            </tr>
         </table>
-        <button onclick="compute()">Compute Interest</button><br><br>
-        <span id="result"></span><br>
     </body>
 </html>
