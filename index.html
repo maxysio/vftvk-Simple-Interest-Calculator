@@ -3,11 +3,11 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
-    <body onLoad="populateNumberOptions()">
-        <h1>HolaSimple Interest Calculator</h1>
+    <body>
+        <h1>GolaSimple Interest Calculator</h1>
         Amount <input type="number"  id="principal">  <br/>
         Interest Rate <input type="number"  id="rate">  <br/>
-        No. of Years <select name="years"></select>  <br/>
+        No. of Years <select name="years" onLoad="populateNumberOptions()"></select>  <br/>
         <span id="result"></span><br>
         <button onclick="compute()">Compute Interest</button>
     </body>
