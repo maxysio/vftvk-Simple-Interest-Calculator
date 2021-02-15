@@ -6,6 +6,6 @@ function compute()
 
     si = p + (p * t * (r/100));
 
-    document.getElementById("result").textContent= "SI value is: " + si;
+    document.getElementById("result").textContent= "Result is here";
 }
         
