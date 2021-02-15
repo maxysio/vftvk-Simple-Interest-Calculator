@@ -8,8 +8,6 @@ function populateNumbers(){
     }
 }
 
-
-
 function compute()
 {
     p = Number(document.getElementById("principal").value);
